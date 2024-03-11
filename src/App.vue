@@ -1,30 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <main>
+    <div class="flex" >
+		<div class="md:w-1/2 hidden md:block" >
+			<img class="w-full" alt="" src="assets/image30.png">
+			<img alt="" src="assets/image31.png"> 
+		</div>
+		<div class="md:w-1/2 w-full" ></div>
+    </div>
+  </main>
 </template>
+<script>
+	import image from "./assets/logo.png"
 
+
+	export default {
+		data: function () {
+			return {
+				image: image
+			}
+		}
+	}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
